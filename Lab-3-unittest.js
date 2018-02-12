@@ -26,7 +26,7 @@ function test_checkHumberId(valueIn, expected) {
     // }
     // passOrFail(result);
 
-    if (result) {
+    if (result === expected) {
         passOrFail = "<span style='color:green'> ==PASSED== </span>";
     } else {
         passOrFail = "<span style='color:red'> xxFAILEDxx </span>";
