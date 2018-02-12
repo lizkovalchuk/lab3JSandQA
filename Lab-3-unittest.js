@@ -32,3 +32,15 @@ function test_checkHumberId(valueIn, expected) {
     var mssg = "Value Tested: " + valueIn + " | Expected Result: " + expected + " " + passOrFail;
     output.innerHTML += mssg;
 }
+//function to check for valid student number
+
+function checkHumbrId(value) {
+    "use strict";
+
+    var IDRegEx = new RegEx("/(n|N)d{8}/");
+    if (IDRegEx.test(value)) {
+        return true;
+    } else {
+        return false;
+    }
+}
